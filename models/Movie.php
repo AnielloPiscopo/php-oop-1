@@ -20,7 +20,9 @@
         }
 
         public function getGenres(){
-            return $this->genres;
+            foreach($this->genres as $genre){
+                echo $genre. "\n";
+            }
         }
     }
 ?>
