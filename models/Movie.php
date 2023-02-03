@@ -18,11 +18,5 @@
         public function getDirector(){
             return $this->director;
         }
-
-        public function getGenres(){
-            foreach($this->genres as $genre){
-                echo $genre. "\n";
-            }
-        }
     }
 ?>

@@ -22,14 +22,18 @@
             $movie2 = new Movie('asdasd', 'cdcd','sasdasx','AAAAAAAA');
 
 
-            echo $movie1->name. "\n";
-            echo $movie1->director. "\n";
-            echo $movie1->getGenres();
+            echo $movie1->getName(). "\n";
+            echo $movie1->getDirector(). "\n";
+            foreach($movie1->genres as $genre){
+                echo $genre."\n";
+            }
 
             
             echo $movie2->name. "\n";
             echo $movie2->director. "\n";
-            echo $movie2->getGenres();
+            foreach($movie2->genres as $genre){
+                echo $genre."\n";
+            }
         ?>
     </main>
 </body>
