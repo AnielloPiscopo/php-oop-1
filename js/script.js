@@ -10,10 +10,15 @@ createApp({
 
   methods: {
     getMoviesInfo() {
-      axios.get(this.serverUrl).then((response) => {
-        this.moviesInfo = response.data;
-        console.log(this.moviesInfo);
-      });
+      axios
+        .get(this.serverUrl)
+        .then((response) => {
+          this.moviesInfo = response.data;
+          console.log(this.moviesInfo);
+        })
+        .catch((err) => {
+          console.warn(err);
+        });
     },
   },
 
