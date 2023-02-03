@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__  . '/models/Movie.php';
+    require_once __DIR__  . '/php/models/Movie.php';
 ?>
 
 
@@ -45,6 +45,8 @@
                 echo $genre."\n";
             }
         ?>
+
+            <div v-for='shi in moviesInfo'>1</div>
         </main>
     </div>
 </body>

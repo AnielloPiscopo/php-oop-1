@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      serverUrl: "./assets/db/movies.json",
+      serverUrl: "./php/server.php",
       moviesInfo: [],
     };
   },
