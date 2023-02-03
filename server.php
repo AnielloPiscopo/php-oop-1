@@ -1,7 +1,5 @@
 <?php
 
-use JetBrains\PhpStorm\Language;
-
 header('Content-Type: application/json');
 $jsonData = file_get_contents('./assets/db/db.json');
 
